@@ -28,6 +28,7 @@ repita
       leia (grausC)
       grausF <- (grausC * 1.8) +32
       escreval ("A temperatura em graus fahrenheit é: ", grausF:1:2, " ºF")
+      escreval ("")
 
 
    caso "2"
@@ -39,6 +40,7 @@ repita
       leia (grausF)
       grausC <- (grausF - 32) / 1.8
       escreval ("A temperatura em graus Celsius é: ", grausC:1:2, " °C")
+      escreval ("")
 
    caso "3"
       dolar <- 0
@@ -52,6 +54,7 @@ repita
       leia (dolar)
       conversao <- dolar * reais
       escreval ("O valor da conversão é: ", conversao:1:2, " Reais")
+      escreval ("")
 
    caso "4"
       dolar <- 0
@@ -65,6 +68,7 @@ repita
       leia (reais)
       conversao <- dolar * reais
       escreval ("O valor da conversão é: ", conversao:1:2, " Dólares")
+      escreval ("")
 
    caso "5"
       escreval ("Deseja mesmo sair? 1- para Sim e 2- para Não")
@@ -73,11 +77,13 @@ repita
          escreval ("Você escolheu sair no programa")
       senao
          escreval ("Você escolheu continuar no programa")
+         escreval ("")
       fimse
 
    outrocaso
       escreval ("Opção inválida")
    fimescolha
+   escreval ("")
 
 ate opcaocaso5 = "1"
 
