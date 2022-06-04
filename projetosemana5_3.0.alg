@@ -24,7 +24,7 @@ para i de 1 ate 4 faca
 
    limpatela
 
-   Escreval("Informe que horas eram quando colotou a informação anterior")
+   Escreval("Informe que horas eram quando colotou a informaÃ§Ã£o anterior")
    leia(vH[i])
 
    limpatela
@@ -48,7 +48,7 @@ fimpara
 
    para i de 1 ate 4 faca
 
-      Escreval ("A temperatura é: ",vC[i]," ºC, registrada as ", vH[i], "h, e correspondem a ", conversao[i]:1:2," ºF")
+      Escreval ("A temperatura Ã©: ",vC[i]," ÂºC, registrada as ", vH[i], "h, e correspondem a ", conversao[i]:1:2," ÂºF")
    fimpara
 
 
@@ -67,7 +67,7 @@ para i de 1 ate 4 faca
 
    limpatela
 
-   Escreval("Informe que horas eram quando colotou a informação anterior")
+   Escreval("Informe que horas eram quando colotou a informaÃ§Ã£o anterior")
    leia(vH[i])
 
    limpatela
@@ -91,7 +91,7 @@ fimpara
 
    para i de 1 ate 4 faca
 
-   Escreval ("A temperatura é: ",vF[i]," ºF, registrada as ", vH[i], "h, e correspondem a ", conversao[i]:1:2," ºC")
+   Escreval ("A temperatura Ã©: ",vF[i]," ÂºF, registrada as ", vH[i], "h, e correspondem a ", conversao[i]:1:2," ÂºC")
    fimpara
 
 
@@ -102,10 +102,10 @@ inicio
 
 repita
 
-Escreval("Escolha uma das opções abaixo:")
+Escreval("Escolha uma das opÃ§Ãµes abaixo:")
 Escreval("")
-Escreval("1 - Converter graus Fahrenheit para graus Celsius")
-Escreval("2 - Converter graus Celsius para graus Fahrenheit")
+Escreval("1 - Converter graus Celsius para graus Fahrenheit")
+Escreval("2 - Converter graus Fahrenheit para graus Celsius")
 Escreval("3 - sair")
 leia(opcao)
 
@@ -126,7 +126,7 @@ opcao <- 3
 
 outrocaso
 
-escreval("Opção inválida")
+escreval("OpÃ§Ã£o invÃ¡lida")
 
 
 fimescolha
