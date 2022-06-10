@@ -1,20 +1,13 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Project/Maven2/JavaApp/src/main/java/${packagePath}/${mainClassName}.java to edit this template
- */
 package DesafioSemana6;
 
 import java.util.Scanner;
 
-/**
- *
- * @author jonathandamasiomedeiros
- */
 public class Principal {
 
     public static void main(String[] args) {
 
-        int menu, grausC, grausF, reais, dolares, cotacao = 0;
+        int menu, reais, dolares, cotacao = 0;
+        float grausC, grausF =0;
 
         System.out.println("Começo do Programa...");
         Scanner leitor = new Scanner(System.in);
