@@ -8,7 +8,7 @@ import java.util.Scanner;
 
 /**
  *
- * @author vitoraquiles
+ * @author jonathandamasiomedeiros
  */
 public class Principal {
 
@@ -41,14 +41,14 @@ public class Principal {
                             System.out.println("Voce escolheu a opcao 1");
                             System.out.println("Digite os graus Celsius que voce deseja converter para graus Fahrenheit: ");
                             grausC = leitor.nextInt();
-                            grausF = ((grausC + 32)*(9/5));
+                            grausF = (grausC * (9/5)) + 32;
                             System.out.println("A temperatura em Farenheit e: " + grausF + "F");
                             break;
                         case 2:
                             System.out.println("Voce escolheu a opcao 2");
                             System.out.println("Digite os graus Fahrenheit que voce deseja converter para graus Celsius: ");
                             grausF = leitor.nextInt();
-                            grausC = ((grausF - 32)/(9/5));
+                            grausC = (grausF - 32)/(9/5);
                             System.out.println("A temperatura em Celsiust e: " + grausF + "C");
                             break;
 
