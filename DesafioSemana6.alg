@@ -6,8 +6,8 @@ public class Principal {
 
     public static void main(String[] args) {
 
-        int menu, reais, dolares, cotacao = 0;
-        float grausC, grausF =0;
+        int menu = 0;
+        float grausC, grausF, cotacao, dolares, reais =0;
 
         System.out.println("Começo do Programa...");
         Scanner leitor = new Scanner(System.in);
@@ -33,16 +33,16 @@ public class Principal {
                         case 1:
                             System.out.println("Voce escolheu a opcao 1");
                             System.out.println("Digite os graus Celsius que voce deseja converter para graus Fahrenheit: ");
-                            grausC = leitor.nextInt();
+                            grausC = leitor.nextFloat();
                             grausF = (grausC * 9/5) + 32;
                             System.out.println("A temperatura em Farenheit e: " + grausF + "F");
                             break;
                         case 2:
                             System.out.println("Voce escolheu a opcao 2");
                             System.out.println("Digite os graus Fahrenheit que voce deseja converter para graus Celsius: ");
-                            grausF = leitor.nextInt();
+                            grausF = leitor.nextFloat();
                             grausC = (grausF - 32)*5/9;
-                            System.out.println("A temperatura em Celsiust e: " + grausF + "C");
+                            System.out.println("A temperatura em Celsiust e: " + grausC + "C");
                             break;
 
                         default:
@@ -61,9 +61,9 @@ public class Principal {
                         case 1:
                             System.out.println("Voce escolheu a opcao 1");
                             System.out.println("Diga a cotação desejada");
-                            cotacao = leitor.nextInt(); 
+                            cotacao = leitor.nextFloat(); 
                             System.out.println ("Diga o valor em Reais");
-                            reais = leitor.nextInt();
+                            reais = leitor.nextFloat();
                             dolares = reais/cotacao;
                             System.out.println(reais + "Reais, sao " + dolares + " Dolares");
                             break;
@@ -71,9 +71,9 @@ public class Principal {
                         case 2:
                             System.out.println("Voce escolheu a opcao 2");
                             System.out.println("Diga a cotação desejada");
-                            cotacao = leitor.nextInt(); 
+                            cotacao = leitor.nextFloat(); 
                             System.out.println ("Diga o valor em Dolares");
-                            dolares = leitor.nextInt();
+                            dolares = leitor.nextFloat();
                             reais = dolares*cotacao;
                             System.out.println(dolares + "Dolares, sao " + reais + " Reais");
 
