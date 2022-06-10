@@ -23,7 +23,9 @@ public class Principal {
             System.out.println("--------------------------------------------------------------------------------------------------------------");
             System.out.println("Digite 1 para converter graus Celsius para graus Farenheit ou converter graus Farenheit para graus Celsius ");
             System.out.println("");
-            System.out.println("Digite 2 para converter Reais para Dólares ou Dólares para Reais ");
+            System.out.println("Digite 2 para converter Reais para Dolares ou Dolares para Reais ");
+            System.out.println("");
+            System.out.println("Digite 3 para sair");
             System.out.println("--------------------------------------------------------------------------------------------------------------");
             menu = leitor.nextInt();
 
@@ -36,22 +38,22 @@ public class Principal {
                     switch (menu) {
 
                         case 1:
-                            System.out.println("Você escolheu a opção 1");
-                            System.out.println("Digite os graus Celsius que você deseja converter para graus Fahrenheit: ");
+                            System.out.println("Voce escolheu a opcao 1");
+                            System.out.println("Digite os graus Celsius que voce deseja converter para graus Fahrenheit: ");
                             grausC = leitor.nextInt();
-                            grausF = (grausC + 32) * (9 / 5);
-                            System.out.println("A temperatura em Farenheit é: " + grausF + "ºF");
+                            grausF = ((grausC + 32)*(9/5));
+                            System.out.println("A temperatura em Farenheit e: " + grausF + "F");
                             break;
                         case 2:
-                            System.out.println("Você escolheu a opção 2");
-                            System.out.println("Digite os graus Fahrenheit que você deseja converter para graus Celsius: ");
+                            System.out.println("Voce escolheu a opcao 2");
+                            System.out.println("Digite os graus Fahrenheit que voce deseja converter para graus Celsius: ");
                             grausF = leitor.nextInt();
-                            grausC = (grausF - 32) / (9 / 5);
-                            System.out.println("A temperatura em Celsiust é: " + grausF + "ºC");
+                            grausC = ((grausF - 32)/(9/5));
+                            System.out.println("A temperatura em Celsiust e: " + grausF + "C");
                             break;
 
                         default:
-                            System.out.println("Opção inválida, tente novamente!");
+                            System.out.println("Opcao invalida, tente novamente!");
                             break;
 
                     }
@@ -59,41 +61,44 @@ public class Principal {
                     break;
 
                 case 2:
-                    System.out.println("Digite 1 para converter Reais para Dólares ou 2 para converter Dólares para Reais");
+                    System.out.println("Digite 1 para converter Reais para Dolares ou 2 para converter Dolares para Reais");
                     menu = leitor.nextInt();
-
-                default:
-                    System.out.println("Opção inválida, tente novamente!");
-                    break;
-
                     switch (menu) {
 
                         case 1:
-                            System.out.println("Você escolheu a opção 1");
+                            System.out.println("Voce escolheu a opcao 1");
                             System.out.println("Diga a cotação desejada");
                             cotacao = leitor.nextInt(); 
                             System.out.println ("Diga o valor em Reais");
                             reais = leitor.nextInt();
                             dolares = reais/cotacao;
-                            System.out.println(reais + "Reais, são " + dolares + " Dólares");
+                            System.out.println(reais + "Reais, sao " + dolares + " Dolares");
                             break;
 
                         case 2:
-                            System.out.println("Você escolheu a opção 2");
+                            System.out.println("Voce escolheu a opcao 2");
                             System.out.println("Diga a cotação desejada");
                             cotacao = leitor.nextInt(); 
-                            System.out.println ("Diga o valor em Dólares");
+                            System.out.println ("Diga o valor em Dolares");
                             dolares = leitor.nextInt();
                             reais = dolares*cotacao;
-                            System.out.println(dolares + "Dólares, são " + reais + " Reais");
+                            System.out.println(dolares + "Dolares, sao " + reais + " Reais");
 
                             break;
 
                         default:
-                            System.out.println("Opção inválida, tente novamente!");
+                            System.out.println("Opcao invalida, tente novamente!");
                             break;
 
                     }
+
+                case 3:
+                    System.out.println("Voce escolheu sair!");
+                            break;
+                            
+                default:
+                System.out.println("Opcao invalida, tente novamente!");
+                break;
 
             }
 
