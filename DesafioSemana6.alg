@@ -8,7 +8,7 @@ import java.util.Scanner;
 
 /**
  *
- * @author jonathandamasiomedeiros
+ * @author vitoraquiles
  */
 public class Principal {
 
