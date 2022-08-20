@@ -1,2 +1,7 @@
-# Pacetech
-Repositório do curso de introdução a programação - Pacetech
+1- SELECT First_name, Last_name, Salary, Departement FROM employee ORDER BY Salary DESC
+
+2- SELECT Departement FROM employee GROUP BY Departement 
+
+3- SELECT AVG (Salary) FROM employee
+
+4- SELECT First_name, Last_name, Salary FROM employee WHERE Salary> (SELECT AVG (Salary) FROM employee)
